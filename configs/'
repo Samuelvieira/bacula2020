@@ -1,0 +1,775 @@
+# Define the main nightly save backup job
+#   By default, this job will back up to disk in /mnt/backup
+#Job {
+#  Name = "BackupClient1"
+#  JobDefs = "DefaultJob"
+#}
+
+
+#Job {
+#  Name = "bkp-srv90"
+#  Type = Backup
+#  Client =  srv90-fd
+#  JobDefs = "DefaultJob"
+##  FileSet = "BACULA"
+#  WriteBootstrap = "/opt/bacula/working/srv90-fd"
+#  Priority = 20
+#  SpoolData = yes
+#}
+
+Job {
+  Name = "bkp-hgsrv81"
+  description = "teste"
+  Type = Backup
+  Client =  hgsrv81-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/hgsrv81-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+
+Job {
+  Name = "bkp-hgsrv97"
+  Type = Backup
+  Client =  hgsrv97-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/hgsrv97-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+Job {
+  Name = "bkp-hgsrv111"
+  Type = Backup
+  Client =  hgsrv111-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/hgsrv111-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+Job {
+  Name = "bkp-hgsrv112"
+  Type = Backup
+  Client =  hgsrv112-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/hgsrv112-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+Job {
+  Name = "bkp-hgsrv119"
+  Type = Backup
+  Client =  hgsrv119-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/hgsrv119-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+
+Job {
+  Name = "bkp-hgsrv130"
+  Type = Backup
+  Client =  hgsrv130-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/hgsrv130-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+
+Job {
+  Name = "bkp-hgsrv136"
+  Type = Backup
+  Client =  hgsrv136-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/hgsrv136-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+
+Job {
+  Name = "bkp-hgsrv135"
+  Type = Backup
+  Client =  hgsrv135-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/hgsrv135-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+Job {
+  Name = "bkp-hgsrv147"
+  Type = Backup
+  Client =  hgsrv147-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/hgsrv147-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+
+Job {
+  Name = "bkp-hgsrv150"
+  Type = Backup
+  Client =  hgsrv150-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/hgsrv150-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+Job {
+  Name = "bkp-hgsrv154"
+  Type = Backup
+  Client =  hgsrv154-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/hgsrv154-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+Job {
+  Name = "bkp-hgsrv161"
+  Type = Backup
+  Client =  hgsrv161-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/hgsrv161-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+# Backup the catalog database (after the nightly save)
+Job {
+  Name = "bkp-hgsrv185"
+  Type = Backup
+  Client =  hgsrv185-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/hgsrv185-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+Job {
+  Name = "bkp-hgsrv187"
+  Type = Backup
+  Client =  hgsrv187-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/hgsrv187-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+Job {
+  Name = "bkp-hgsrv195"
+  Type = Backup
+  Client =  hgsrv195-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/hgsrv195-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+Job {
+  Name = "bkp-hgsrv206"
+  Type = Backup
+  Client =  hgsrv206-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/hgsrv206-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+Job {
+  Name = "bkp-hgsrv3"
+  Type = Backup
+  Client =  hgsrv3-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/hgsrv3-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+#Job {
+#  Name = "BackupCatalog"
+#  JobDefs = "DefaultJob"
+#  Level = Full
+#  FileSet="Catalog"
+#  Schedule = "WeeklyCycleAfterBackup"
+  # This creates an ASCII copy of the catalog
+  # Arguments to make_catalog_backup.pl are:
+#  make_catalog_backup.pl <catalog-name>
+#  RunBeforeJob = "/etc/bacula/scripts/make_catalog_backup.pl MyCatalog"
+#  # This deletes the copy of the catalog
+#  RunAfterJob  = "/etc/bacula/scripts/delete_catalog_backup"
+#  Write Bootstrap = "/var/lib/bacula/%n.bsr"
+#  Priority = 11                   # run after main backup
+#}
+
+#
+# Standard Restore template, to be changed by Console program
+#  Only one such job is needed for all Jobs/Clients/Storage ...
+#
+Job {
+  Name = "RestoreFiles"
+  Type = Restore
+  Client = srv90-fd
+  Storage = File1
+  FileSet="Full Set"
+  Pool = File
+  Messages = Standard
+  Where = /mnt/backup/bacula-restores
+}
+
+Job {
+ Name = "srvsamba"
+ Type = Backup
+ Client =  srvsamba-fd
+ JobDefs = "DefaultJob"
+ FileSet = "File set SAMBA"
+ WriteBootstrap = "/opt/bacula/working/srvsamba-fd"
+ Priority = 20
+ SpoolData = yes
+}
+
+
+Job {
+  Name = "bkp-hgsrv52"
+  Type = Backup
+  Client =  hgsrv52-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/hgsrv52-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+Job {
+  Name = "bkp-hgsrv105"
+  Type = Backup
+  Client =  hgsrv105-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/hgsrv105-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+Job {
+  Name = "bkp-hgsrv108"
+  Type = Backup
+  Client =  hgsrv108-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/hgsrv108-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+Job {
+  Name = "bkp-hgsrv114"
+  Type = Backup
+  Client =  hgsrv114-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/hgsrv114-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+Job {
+  Name = "bkp-hgsrv138"
+  Type = Backup
+  Client =  hgsrv138-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/hgsrv138-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+Job {
+  Name = "bkp-hgsrv142"
+  Type = Backup
+  Client =  hgsrv142-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/hgsrv142-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+Job {
+  Name = "bkp-hgsrv153"
+  Type = Backup
+  Client =  hgsrv153-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/hgsrv153-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+Job {
+  Name = "bkp-hgsrv156"
+  Type = Backup
+  Client =  hgsrv156-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/hgsrv156-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+
+Job {
+  Name = "bkp-hgsrv50"
+  Type = Backup
+  Client =  hgsrv50-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/hgsrv50-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+Job {
+  Name = "bkp-hgsrv115"
+  Type = Backup
+  Client =  hgsrv115-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/hgsrv115-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+Job {
+  Name = "bkp-hgsrv169"
+  Type = Backup
+  Client =  hgsrv169-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/hgsrv169-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+Job {
+  Name = "bkp-hgsrv177"
+  Type = Backup
+  Client =  hgsrv177-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/hgsrv177-fd"
+  Priority = 20
+  SpoolData = yes
+}
+Job {
+  Name = "bkp-hgsrv181"
+  Type = Backup
+  Client =  hgsrv181-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/hgsrv181-fd"
+  Priority = 20
+  SpoolData = yes
+}
+Job {
+  Name = "bkp-srv101"
+  Type = Backup
+  Client =  srv101-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/hgsrv101-fd"
+  Priority = 20
+  SpoolData = yes
+}
+Job {
+  Name = "bkp-srv102"
+  Type = Backup
+  Client =  srv102-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/hgsrv102-fd"
+  Priority = 20
+  SpoolData = yes
+}
+Job {
+  Name = "bkp-hgsrv162"
+  Type = Backup
+  Client =  hgsrv162-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/hgsrv162-fd"
+  Priority = 20
+  SpoolData = yes
+}
+Job {
+  Name = "bkp-hgsrv51"
+  Type = Backup
+  Client =  hgsrv51-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/hgsrv51-fd"
+  Priority = 20
+  SpoolData = yes
+}
+Job {
+  Name = "bkp-hgsrv248"
+  Type = Backup
+  Client =  hgsrv248-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/hgsrv248-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+Job {
+  Name = "bkp-srv191"
+  Type = Backup
+  Client =  srv191-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/srv191-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+Job {
+  Name = "bkp-hgsrv141"
+  Type = Backup
+  Client =  hgsrv141-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/hgsrv141-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+Job {
+  Name = "bkp-srv103"
+  Type = Backup
+  Client =  srv103-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/srv103-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+Job {
+  Name = "bkp-srv106"
+  Type = Backup
+  Client =  srv106-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/srv106-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+Job {
+  Name = "bkp-srv110"
+  Type = Backup
+  Client =  srv110-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/srv110-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+Job {
+  Name = "bkp-srv118"
+  Type = Backup
+  Client =  srv118-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/srv118-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+Job {
+  Name = "bkp-srv120"
+  Type = Backup
+  Client =  srv120-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/srv120-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+Job {
+  Name = "bkp-srv137"
+  Type = Backup
+  Client =  srv137-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/srv137-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+Job {
+  Name = "bkp-srv146"
+  Type = Backup
+  Client =  srv146-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/srv146-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+Job {
+  Name = "bkp-srv148"
+  Type = Backup
+  Client =  srv148-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/srv148-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+Job {
+  Name = "bkp-srv152"
+  Type = Backup
+  Client =  srv152-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/srv152-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+Job {
+  Name = "bkp-srv159"
+  Type = Backup
+  Client =  srv159-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/srv159-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+Job {
+  Name = "bkp-srv163"
+  Type = Backup
+  Client =  srv163-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/srv163-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+Job {
+  Name = "bkp-srv194"
+  Type = Backup
+  Client =  srv194-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/srv194-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+Job {
+  Name = "bkp-srv225"
+  Type = Backup
+  Client =  srv225-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/srv225-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+Job {
+  Name = "bkp-srv226"
+  Type = Backup
+  Client =  srv226-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/srv226-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+Job {
+  Name = "bkp-srv248"
+  Type = Backup
+  Client =  srv248-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/srv248-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+Job {
+  Name = "bkp-srv164"
+  Type = Backup
+  Client =  srv164-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  writeBootstrap = "/opt/bacula/working/srv164-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+Job {
+  Name = "bkp-srv132"
+  Type = Backup
+  Client =  srv132-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/srv132-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+Job {
+  Name = "bkp-srv171"
+  Type = Backup
+  Client =  srv171-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/srv171-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+Job {
+  Name = "bkp-srv113"
+  Type = Backup
+  Client =  srv113-fd
+  JobDefs = "DefaultJob"
+  FileSet = "File set WEBRUBY"
+  WriteBootstrap = "/opt/bacula/working/srv113-fd"
+  Priority = 20
+  SpoolData = yes
+}
+
+#Job {
+#  Name = "bkp-srv252"
+#  Type = Backup
+#  Client =  srv252-fd
+#  JobDefs = "DefaultJob"
+#  FileSet = "File set WEBRUBY"
+#  WriteBootstrap = "/opt/bacula/working/srv252-fd"
+#  Priority = 20
+#  SpoolData = yes
+#}
+
+##BANCO DE HOMOLOGACAO
+Job {
+  Name = "hgsrv109"
+  Type = Backup
+  Client =  hgsrv109-fd
+  JobDefs = "BANCOS"
+  FileSet = "BANCO"
+  WriteBootstrap = "/opt/bacula/working/hgsrv109.bsr"
+  Priority = 3
+  Client Run Before Job = "su - postgres -c \"/postgres/scripts/backup_dumpall_fisico_producao.sh\""
+  SpoolData = yes
+}
+
+##BANCO DE PRODUCAO
+Job {
+  Name = "srv2"
+  Type = Backup
+  Client =  srv2-fd
+  JobDefs = "BANCOS"
+  FileSet = "BANCO"
+  WriteBootstrap = "/opt/bacula/working/srv2.bsr"
+  Priority = 3
+  SpoolData = yes
+  Client Run Before Job = "su - postgres -c \"/postgres/scripts/backup_dumpall_fisico_producao.sh\""
+}
+
+Job {
+  Name = "srv151"
+  Type = Backup
+  Client =  srv151-fd
+  JobDefs = "DefaultJob"
+  FileSet = "WEBPHP"
+  WriteBootstrap = "/opt/bacula/working/srv151.bsr"
+  Priority = 4
+  Client Run Before Job = "su - root -c \"/etc/scripts/bck_pdphp_bd_bacula.sh\""
+  SpoolData = yes
+}
+
+Job {
+  Name = "srv134"
+  Type = Backup
+  Client =  srv134-fd
+  Client Run Before Job = "su - root -c \"/etc/scripts/bck_pdphp_bd.sh\""
+  JobDefs = "DefaultJob"
+  FileSet = "WEBPHP"
+  WriteBootstrap = "/opt/bacula/working/srv134.bsr"
+  Priority = 2
+  SpoolData = yes
+}
+Job {
+  Name = "srv122"
+  Type = Backup
+  Client =  srv122-fd
+  JobDefs = "DefaultJob"
+  FileSet = "WEBPHP"
+  WriteBootstrap = "/opt/bacula/working/srv122.bsr"
+  Priority = 2
+  SpoolData = yes
+}
+Job {
+  Name = "srv78"
+  Type = Backup
+  Client =  srv78-fd
+  JobDefs = "DefaultJob"
+  FileSet = "WEBPE"
+  WriteBootstrap = "/opt/bacula/working/srv78.bsr"
+  Client Run Before Job = "su - root -c \"/etc/scripts/bck_bd_bacula.sh\""
+  Priority = 2
+  SpoolData = yes
+}
+
+Job {
+  Name = "srv166"
+  Type = Backup
+  Client =  srv166-fd
+  JobDefs = "BANCOS"
+  FileSet = "BANCO1"
+  WriteBootstrap = "/opt/bacula/working/srv166.bsr"
+  Client Run Before Job = "su - root -c \"/etc/scripts/bck_bd.sh\""
+  Priority = 2
+  SpoolData = yes
+  }
+
+

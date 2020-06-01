@@ -1,0 +1,4 @@
+JobDefs {
+...
+ClientRunAfterJob = "/etc/bacula/scripts/check_zabbix '%c' '%j' %l %e"
+}
