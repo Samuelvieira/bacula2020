@@ -2,7 +2,7 @@
 #  and to the console
 Messages {
   Name = Standard
-  mailcommand = "/usr/sbin/bsmtp -h 10.10.0.90 -f \"\(Bacula\) \<%r\>\" -s \"Bacula: %t %e of %c %l\" %r"
+  mailcommand = "/usr/sbin/bsmtp -h 10.10.0.198 -f \"\(Bacula\) \<%r\>\" -s \"Bacula: %t %e of %c %l\" %r"
   operatorcommand = "/usr/sbin/bsmtp -h 10.10.0.198 -f \"\(Bacula\) \<%r\>\" -s \"Bacula: Intervention needed for %j\" %r"
   mail = root@10.10.0.198 = all, !skipped
   operator = root@10.10.0.198 = mount
